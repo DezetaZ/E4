@@ -433,7 +433,16 @@ footer{
     .footinfo{
         margin-left: 20px;
     }
-    
+    main{
+        width: 100%;
+    }
+    header{
+        width: 100%;
+
+    }
+    body{
+        margin: 0px;
+    }
 }
 
 @media (max-width: 720px ){
