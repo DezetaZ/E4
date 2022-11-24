@@ -75,7 +75,12 @@ header{
 .list a{
     color: rgba(253, 253, 253, 0.783);
     font-family: 'Lato', sans-serif;
+    transition: all 1s;
     
+}
+.list a:hover{
+    color: rgba(95, 254, 198, 0.783);
+    transition: all 1s;
 }
 .list li:first-child > a{
     
@@ -89,7 +94,6 @@ header{
 }
 .menuh{
     
-    display: none;
     align-items: center;
     justify-content: center;
     flex-direction: column;
@@ -97,10 +101,10 @@ header{
     height: 30px;
     width: 30px;
     cursor: pointer;
-}
-input{
     display: none;
+    transition: all 1s;
 }
+
 
 .lineas{
     border-radius: 2px;
@@ -127,7 +131,7 @@ main{
     
     margin: auto;
     margin-top: 80px;
-    height: ;
+    
     display: flex;
     align-items: center;
     justify-content: center;
@@ -152,6 +156,11 @@ main{
     display: flex;
     justify-content: center;
     align-items: flex-end;
+    transition: all 1s;
+}
+.hero-div:hover{
+    transform: scale(1.1);
+    transition: all 1s;
 }
 .heroimg{
     width: 100%;
@@ -219,19 +228,28 @@ p{
     justify-content: center;
     align-items: center;
     gap: 20px;
+    
 }
+
 .bt-explorar{
     background-color: rgba(96, 160, 116, 0.492);
     padding: 10px;
     border-radius: 1rem;
-
+    transition: all 1s;
+}
+.bt-explorar:hover{
+    transform: scale(1.1);
+    transition: all 1s;
 }
 .bt-info{
     background-color: rgba(71, 96, 84, 0.514);
     padding: 10px;
     border-radius: 1rem;
-
-
+    transition: all 1s;
+}
+.bt-info:hover{
+    transform: scale(1.1);
+    transition: all 1s;
 }
 a{
     text-decoration: none;
@@ -295,6 +313,12 @@ a{
     padding: 20px;
     border-radius: 16px;
     background-color: rgba(4, 62, 24, 0.794);
+    cursor: pointer;
+    transition: all 1s;
+}
+.card:hover{
+    transform: scale(1.1);
+    transition: all 1s;
 }
 
 .infocard{
@@ -455,31 +479,49 @@ footer{
     .filtros{
         font-size: 14px;
     }
-    .navbar{
-        
-    }
+    
+
     .list{
         
         position: absolute;
-        right: 80px;
+        right: 54px;
         margin-top: 205px;
         padding: 15px;
+        padding-right: 50px;
         align-items: flex-start;
         flex-direction: column;
         background-color: #076921bc;
-        border-radius: 0px 0px 15px 15px;
+        
+        border-radius: 15px 0px 15px 15px;
         z-index: 2;
-        display:  none;
+        display: none;
+    }
+    .list a{
+        color: rgb(255, 255, 255);
+        cursor: pointer;
+        
+    }
+    .list a:hover{
+        font-size: 40px;
     }
     .menuh{
         display: flex;
         
         
     }
-    #asd:checked + .list {
+    .menuh:hover + .list{
         display: flex;
-        }
+        
 
+    }
+    .menuh:hover{
+        
+        transform: rotate(-90deg);
+        transition: all 1s;
+    }
+    
+
+    
 }
 @media(max-width: 506px){
     .titlecard{
